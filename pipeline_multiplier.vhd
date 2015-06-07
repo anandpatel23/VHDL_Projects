@@ -36,7 +36,7 @@ begin
 		end generate G2;
 		G3: if i > 0 AND i < 2 generate
 			U: pmult_pe port map(x(i), yy(i), ppss(i), cc(i), en, reset, yy(i+1), ppss(i-1), cc(i+1));
-		end generate g3;
+		end generate G4;
 		G4: if i = 2 generate
 			U: pmult_pe port map(x(i), yy(i), ppss(i), cc(i), en, reset, open, ppss(i-1), w);					  
 		end generate G4;
